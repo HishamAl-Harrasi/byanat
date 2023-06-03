@@ -58,7 +58,7 @@ public class TowerService {
 
     public List<Tower> getFilteredTowers(String id, String operator, String technology, String towerType) {
 
-        // Specifications i.e. query criteria (WHERE clause)
+        // Specifications i.e. query criteria (basically a WHERE clause)
         List<Specification<Tower>> specifications = new ArrayList<>();
 
         if (id != null && !id.isEmpty()) {
