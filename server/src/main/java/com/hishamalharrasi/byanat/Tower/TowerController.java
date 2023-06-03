@@ -42,12 +42,6 @@ public class TowerController {
             @RequestParam(required=false) String technology, 
             @RequestParam(required=false) String tower_type) {
             try {
-                System.out.println("id: " + id);
-                System.out.println("operator: " + operator);
-                System.out.println("technology: " + technology);
-                System.out.println("tower_type: " + tower_type);
-                System.out.println("\n\n\n\n\n\n");
-
                 List<Tower> towersFiltered =  towerService.getFilteredTowers(id, operator, technology, tower_type);
 
                 return new ResponseEntity<>(towersFiltered, HttpStatus.OK);

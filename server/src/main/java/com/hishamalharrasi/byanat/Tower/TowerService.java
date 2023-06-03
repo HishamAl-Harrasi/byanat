@@ -61,16 +61,16 @@ public class TowerService {
         // Specifications i.e. query criteria (WHERE clause)
         List<Specification<Tower>> specifications = new ArrayList<>();
 
-        if (id != null) {
+        if (id != null && !id.isEmpty()) {
             specifications.add(TowerSpecifications.hasId(id));
         }
-        if (towerType != null) {
+        if (towerType != null && !towerType.isEmpty()) {
             specifications.add(TowerSpecifications.hasTowerType(towerType));
         }
-        if (operator != null) {
+        if (operator != null && !operator.isEmpty()) {
             specifications.add(TowerSpecifications.hasOperator(operator));
         }
-        if (technology != null) {
+        if (technology != null && !technology.isEmpty()) {
             specifications.add(TowerSpecifications.hasTechnology(technology));
         }
 

@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "751ddb85-fa2a-4d11-bf9c-557e97afe7a9",
+		"name": "byanat API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24973822"
+	},
+	"item": [
+		{
+			"name": "Get All Towers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Towers Filtered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/towers?id=TEST VALUE HERE&technology=TEST VALUE HERE&operator=TEST VALUE HERE&tower_type=TEST VALUE HERE",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"towers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "TEST VALUE HERE"
+						},
+						{
+							"key": "technology",
+							"value": "TEST VALUE HERE"
+						},
+						{
+							"key": "operator",
+							"value": "TEST VALUE HERE"
+						},
+						{
+							"key": "tower_type",
+							"value": "TEST VALUE HERE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}
