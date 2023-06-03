@@ -10,10 +10,5 @@ public class ByanatBeChallengeApplication {
 		SpringApplication.run(ByanatBeChallengeApplication.class, args);
 	}
 
-	// @EventListener(ApplicationReadyEvent.class)
-	// public void doSomethingAfterStartup() {
-	// 	System.out.println("hello world, I have just started up");
-	// }
-
 
 }

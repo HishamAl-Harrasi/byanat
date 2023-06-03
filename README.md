@@ -29,7 +29,9 @@ The API provides the following endpoints:
 		- `?technology=`
 		- `?tower_type=`
 
-You can also import the Postman collection in the `docs/` directory.
+You can also import the Postman collection in the `docs/` directory. 
+
+A Swagger UI was also added, and can be found in the URL path: `/swagger-ui/`
 
 ## Conclusion
 
