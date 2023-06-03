@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - byanat
+    
+
+  server:
+    image: byanat:test
+    ports:
+      - 8080:8080
+    # restart: never
+    depends_on:
+      - db
+    networks:
+      - byanat
+    
+
+volumes:
+  postgres-data:
+
+networks:
+  byanat:
