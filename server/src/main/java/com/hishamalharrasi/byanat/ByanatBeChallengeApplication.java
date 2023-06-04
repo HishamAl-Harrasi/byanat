@@ -9,6 +9,5 @@ public class ByanatBeChallengeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ByanatBeChallengeApplication.class, args);
 	}
-
-
+	
 }
