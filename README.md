@@ -1,7 +1,7 @@
 
   
 
-# Byanat Cell Tower Data API
+# byanat Cell Tower Data API
 
   
 
@@ -14,8 +14,6 @@ This repository contains the solution to the backend challenge by **byanat**. It
   
 
 This project hosts a REST API that allows users to retrieve and filter cell tower information based on various criteria. The API is hosted at [https://byanat.hishamalharrasi.com](https://byanat.hishamalharrasi.com).
-
-Go to [https://byanat.hishamalharrasi.com/swagger-ui/index.html](https://byanat.hishamalharrasi.com/swagger-ui/index.html) for Swagger docs.
 
   
 
@@ -68,7 +66,7 @@ You can also import the Postman collection in the `docs/` directory.
 
   
 
-A Swagger UI was also added, and can be found in the URL path: `/swagger-ui/`
+A Swagger UI was also added, and can be found in the URL path: `/swagger-ui/index.html`
 
   
 
